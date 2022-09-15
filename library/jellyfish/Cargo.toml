@@ -1,0 +1,15 @@
+[package]
+name = "jellyfish"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jni = { version = "0.19", default-features = false }
+log = "0.4"
+android_logger = "0.11"
+
+[lib]
+name = "jellyfish"
+path = "src/lib.rs"
+
+crate-type = ["cdylib"]
